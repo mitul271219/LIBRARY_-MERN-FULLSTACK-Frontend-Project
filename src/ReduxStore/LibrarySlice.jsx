@@ -519,7 +519,7 @@ export const UserLogOutPost = createAsyncThunk(
 export const UserForgotResetPassPost = createAsyncThunk(
   "UserForgotResetPassPost",
   async (userEmail, { rejectWithValue }) => {
-    // console.log(userEmail);
+    console.log(userEmail);
     try {
       const res = await axios.post(
         `https://library-mern-fullstack-project.onrender.com/senderestlink`,
