@@ -10,8 +10,7 @@ export const Users = () => {
   const userToken = localStorage.getItem("userTOKEN");
   useEffect(() => {
     dispatch(Admin_Login_Signup_GET(userToken));
-  }, [dispatch]);
-
+  }, [dispatch, userToken]);
 
   const handleDelete = (userId) => {   
     //   dispatch(DeleteUserThunk(userId, userToken));
